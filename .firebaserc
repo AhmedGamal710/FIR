@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "dist/firAppKMR": "firappkmr",
+    "default": "firappkmr",
+    "index": "firappkmr"
+  }
+}

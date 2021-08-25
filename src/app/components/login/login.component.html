@@ -1,0 +1,19 @@
+<div class="body container">
+    <h2 class="text-center">Log in</h2>
+    <form #form="ngForm" (ngSubmit)="login(form)">
+        <input ngModel name="email" #email="ngModel" type="text" class="form-control" placeholder="Email" required email> 
+        <div class="alert alert-danger" *ngIf=" email.touched && email.errors?.required"> email is required</div>
+        <div class="alert alert-danger" *ngIf="email.touched && email.errors?.email"> pleas enter an email right</div>
+
+        <input ngModel name="password" #password="ngModel" type="password" class="form-control"  autocomplete="on" placeholder="Password" required minlength="6">
+        <div class="alert alert-danger" *ngIf=" password.touched && password.errors?.required"> password is required</div>
+        <div class="alert alert-danger" *ngIf="password.touched && password.errors?.minlength"> password should be 6+ charachter</div>
+
+        <button class="btn btn-primary"  [disabled]="form.invalid" >Log In</button>
+    </form>
+    <div class="alert alert-danger" *ngIf='messageErr'>
+        {{messageErr}}
+    </div>
+</div>
+
+<div></div>

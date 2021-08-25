@@ -1,0 +1,9 @@
+.body{
+    background-image: url('../../../assets/login/undraw_connected_world_wuay.svg') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
+}

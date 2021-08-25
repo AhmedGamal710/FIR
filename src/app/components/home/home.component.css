@@ -1,0 +1,25 @@
+.container{
+    height: 1500px;
+}
+.card-img-top{
+    height: 250px;
+}
+/* 32be8f */
+button{
+    background-image: linear-gradient(to right , #060163, #7f7fbf,#093b77) !important;
+    /* outline: none; */
+    border: none;
+    /* cursor: pointer; */
+    background-size: 200%;
+    transition: ease-in-out .5s ;
+    -webkit-transition: ease-in-out .5s ;
+    -moz-transition: ease-in-out .5s ;
+    -ms-transition: ease-in-out .5s ;
+    -o-transition: ease-in-out .5s ;
+}
+button:hover {
+    background-position: right ;
+}
+input:focus{
+    background : rgb(159, 230, 235);
+}

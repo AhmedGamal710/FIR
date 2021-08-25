@@ -1,0 +1,21 @@
+<div class="body container">
+    <div class="row">
+        <div class="col col-12 col-md-6 col-lg-3" *ngFor="let good of goods;index as i">
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="card" style="width: 18rem;">
+                <img class="card-img-top" [src]="good.photoUrl" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{ good.name | titlecase}}</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p  class="card-text" >{{ good.price | currency}}</p>
+                  <button class="btn btn-primary" (click)="addToCart(i)" *ngIf="add !== i" >add to cart </button>
+                  <div *ngIf="add === i">
+                    <input type="number" class="form-control " name="" placeholder=" Amount {kg}" #amount>
+                    <button (click)="buy(amount.value)" class="btn btn-primary"> Buy </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

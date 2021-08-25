@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    overflow-x: hidden;
+
+}
+app-navbar{
+    width: 100%;
+
+}
+
+.router-container{
+    position: relative;
+}
+.router-container > *{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.upSpiner{
+    text-align: center;
+    width: 100%;
+    height: 900px;
+    padding: 250px 0 0 0;
+    color: #fff;
+    background: #1d1f20;
+}
+#loading {
+		-webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
